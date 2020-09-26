@@ -83,5 +83,6 @@ if __name__ == '__main__':
                 del subs[i]
                 modified = True
         if modified:
+            subs.clean_indexes()
             move(filename, filename+'.bak')
             subs.save(filename)
