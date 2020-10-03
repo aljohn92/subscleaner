@@ -85,5 +85,6 @@ if __name__ == '__main__':
                 del subs[i]
                 modified = True
         if modified:
-            move(filename, path.join(tempfile.gettempdir(), filename+'.bak'))
+            
+            move(filename, path.join(tempfile.gettempdir(), filename+'.bak'))1
             subs.save(filename)
