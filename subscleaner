@@ -84,7 +84,7 @@ if __name__ == '__main__':
                 print("Removing: "+str(line)+"\n")
                 del subs[i]
                 modified = True
-        if modified:
-            
+        if modified
+            subs.clean_indexes()
             move(filename, path.join(tempfile.gettempdir(), filename+'.bak'))1
             subs.save(filename)
